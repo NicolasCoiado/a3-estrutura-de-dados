@@ -1,0 +1,92 @@
+A era digital é uma realidade para qualquer empresa de alto nível e que sabe como pode gerar mais oportunidades e desenvolver sua gestão, independentemente de seu porte.
+
+Em meio às práticas que marcam esse contexto, a análise de dados é uma das principais e mais importantes — não só para monitorar um negócio, mas para basear a tomada de decisões de forma estratégica.
+
+Mais do que simplesmente captar as informações e fazer uma leitura, a análise ajuda a entender o desempenho da empresa de maneira profunda, seja internamente, seja diante do mercado.
+
+Além disso, esses dados podem facilitar o relacionamento com o público, gerando mais oportunidades. Para aproveitar isso tudo, no entanto, é fundamental realizar análises eficazes e adequadas.
+
+Neste conteúdo, falaremos mais sobre a análise de dados e como ela deve ser desenvolvida em uma empresa. Para isso, você encontrará os tópicos:
+
+O que é análise de dados?
+Quais são os tipos de análise de dados?
+Quais são os impactos da análise de dados para as empresas?
+Como fazer análise de dados com eficiência?
+Continue a leitura e confira!
+
+O que é análise de dados?
+A análise de dados é um trabalho dedicado ao aprofundamento sobre os dados que a empresa coleta em suas principais fontes.
+
+Emails, plataformas de gestão, ferramentas de automação, planilhas, documentos e uma série de outras origens geram um nível alto de material desestruturado, mas muito útil, o famoso Big Data.
+
+Quando compilada, essa grande quantidade de informação pode ser analisada de maneira técnica, com ajuda da tecnologia.
+
+Hoje, já existem sistemas que dão suporte aos analistas, automatizando a identificação de padrões de comportamento desses dados.
+
+A análise de dados é o que garante que, a partir de um material bruto, seja possível entender a empresa a partir de diversas perspectivas, sempre com um trabalho técnico e apoiado por tecnologia de ponta
+
+A relevância desse trabalho
+O entendimento da importância do processo de análise de dados passa diretamente pela transformação digital. O momento atual coloca empresas em um cenário em que têm a tecnologia como o centro da gestão e da operação.
+
+Nessa realidade, o número de dados gerados aumentou significativamente, o que gera uma possibilidade de leitura ainda maior.
+
+Analisar dados é um trabalho de rastreamento das atividades e dos resultados que a empresa tem diante do seu público, em ações de Marketing, em vendas, na produtividade interna, nas finanças e em todas as áreas de um negócio.
+
+Tudo isso gera dados que mostram profundamente o que se passa nos setores e nas atividades. Assim, essa análise é uma forma de entender os detalhes de uma empresa.
+
+A importância da análise de dados para a gestão
+Uma gestão baseada em dados tem maior capacidade de entender cada perspectiva do negócio, ou seja, todas as áreas e seus resultados, o que naturalmente tem impacto na empresa.
+
+A análise de dados é o trabalho que permite entender a fundo os resultados de cada setor e, a partir disso, tomar decisões certeiras, baseadas nas informações que foram extraídas desses dados, no processo de data mining.
+
+Quais são os tipos de análise de dados?
+Há diferentes formas de trabalhar com dados, por isso há análises distintas. Cada tipo é voltado para uma proposta, ou seja, com essas análises é possível enxergar as informações enquadradas em uma intenção mais específica.
+
+Conheça a seguir os tipos de análises mais utilizados e como eles são aplicados na realidade de uma empresa.
+
+Descritiva
+A análise descritiva é voltada para as percepções mais dinâmicas do status atual da empresa.
+
+Sua aplicação é a ideal quando gestores precisam ter um acompanhamento constante do negócio, ou seja, quando é preciso saber o que está acontecendo em real time.
+
+Essa análise pode ser feita a qualquer momento para entender resultados de vendas, conversões, visitas em um site, e muito mais.
+
+Preditiva
+Como o nome sugere, esse é o tipo de análise voltado à obtenção de previsões sobre como algo vai se comportar — que pode ser o mercado, o volume de vendas, entre outras questões.
+
+A intenção desse tipo de análise é realizar projeções mais sólidas, com um entendimento maior do que acontecerá no futuro. A partir disso, decisões mais adequadas são tomadas de acordo com as expectativas.
+
+Prescritiva
+Análises prescritivas são voltadas para projeção, mas com foco maior em decisões que são tomadas, mais especificamente, na definição de estratégias a serem seguidas.
+
+Uma ação de Marketing, por exemplo, passa por uma análise prescritiva para que haja o entendimento de seu possível sucesso. A prescrição ajuda a entender como desenvolver uma estratégia certeira.
+
+Diagnóstica
+Uma análise diagnóstica ajuda a entender de que maneira determinados acontecimentos se desenvolveram. Por exemplo, em quais canais as vendas aconteceram, onde estão concentrados os compradores, entre outros pontos.
+
+A proposta dessa análise é destrinchar os dados e concretizar toda a jornada, não só de vendas, mas em todas as interações e acontecimentos do negócio.
+
+Quais são os impactos da análise de dados para as empresas?
+Todos positivos, os impactos da análise de dados possibilitam uma empresa a entender cada movimento feito, tudo que acontece a partir de suas ações e, principalmente, tomar decisões embasadas.
+
+Quando analisados de forma eficaz e utilizados a partir de uma estratégia, os dados podem resultar em desenvolvimento e capacidade otimizada de administração do negócio.
+
+A seguir, entenda melhor de que forma a análise ajuda as empresas.
+
+Visualização do status atual do mercado
+O mercado é um parâmetro fundamental para que as empresas saibam como elas precisam responder às tendências, aos desejos de consumo e ainda se manterem competitivas.
+
+Há muitos dados que podem ser coletados para entender de que forma outras companhias têm trabalhado e como o público tem respondido às inovações e aos métodos utilizados.
+
+Ter essa percepção sobre o status atual do mercado é o que mantém a empresa sempre em posição de tomada de decisão certeira.
+
+A antecipação às tendências é também uma possibilidade gerada pela leitura exata do que acontece no segmento, algo que só se concretiza quando há uma visualização correta de como o mercado está.
+
+Entendimento das necessidades do cliente
+Em sua jornada de consumo, nas interações que faz por meio dos canais que a empresa disponibiliza, em pesquisas e em atendimentos, o consumidor tende a mostrar suas necessidades.
+
+Elas são das mais variadas, desde as que mostram um pouco mais sobre seu perfil de consumo, até aquelas mais detalhadas, como a busca por soluções de questões comuns à sua vida.
+
+Todas essas atividades geram dados, esses que precisam ser devidamente captados, sempre respeitando o que diz a LGPD, para então preparar ofertas, ações de Marketing e uma adequação mais ampla ao cliente.
+
+As plataformas de CRM são de grande ajuda para gerar registros de cada cliente e, a partir daí, oferecer serviços, produtos e uma relação mais personalizada.

@@ -1,0 +1,11 @@
+{
+  "name": "a3-estrutura-de-dados",
+  "version": "1.0.0",
+  "description": "Trabalho avaliativo da matéria de estrutura de dados.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Nicolas Coiado",
+  "license": "MIT"
+}
