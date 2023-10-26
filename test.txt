@@ -1,92 +1,88 @@
-A era digital é uma realidade para qualquer empresa de alto nível e que sabe como pode gerar mais oportunidades e desenvolver sua gestão, independentemente de seu porte.
+RESUMO
+Neste artigo apresentamos um posicionamento sobre a área de processamento de língua natural em português, seus desenvolvimentos desde o princípio até a explosão de aplicações modernas baseadas em aprendizado de máquina. Exploramos os desafios que a área necessita enfrentar no momento, tanto de natureza técnica quanto de natureza ética e moral, e concluímos com a inabalável associação do processamento de língua natural com os estudos linguísticos.
+PALAVRAS-CHAVE:
+Processamento de língua natural; Redes neurais; Contexto linguístico; Português brasileiro
+ABSTRACT
+This is a position paper on the current state of the field of natural language processing (NLP) in Portuguese, its developments from the beginning, and the explosion of recent applications based on machine learning. We explore the challenges that the field is currently facing, of both technical and ethical and moral nature, and conclude with the unwavering association between natural language processing and linguistic studies.
 
-Em meio às práticas que marcam esse contexto, a análise de dados é uma das principais e mais importantes — não só para monitorar um negócio, mas para basear a tomada de decisões de forma estratégica.
+KEYWORDS:
+Natural language processing; Neural networks; Linguistic context; Brazilian Portuguese
 
-Mais do que simplesmente captar as informações e fazer uma leitura, a análise ajuda a entender o desempenho da empresa de maneira profunda, seja internamente, seja diante do mercado.
+Introdução
+Este artigo apresenta um posicionamento frente aos desafios da área do Processamento de Língua Natural (PLN),1 em particular em Língua Portuguesa. Essa área se encontra na confluência de diversas outras, como Ciência da Computação, Linguística, Lógica, Psicologia, dentre outras, e requer por natureza um tratamento multidisciplinar. Além disso, esse posicionamento está sendo feito no momento de grande explosão de pesquisas e aplicações dessa área do conhecimento, em que o que era antes tratado como ficção científica passa a ser visto como ciência de fato e é encontrado rotineiramente na vida das pessoas, com impactos acadêmicos, sociais e econômicos.
 
-Além disso, esses dados podem facilitar o relacionamento com o público, gerando mais oportunidades. Para aproveitar isso tudo, no entanto, é fundamental realizar análises eficazes e adequadas.
+Os objetivos muitas vezes incertos ou mal definidos da área hoje se consolidam, ao menos no ponto de vista desse posicionamento, como a capacidade de capturar os fenômenos linguísticos dentro de um contexto em que diversos fenômenos cognitivos, sociais e até econômicos se inter-relacionam. Esta apresentação se centra nos esforços para a captura desse contexto.
 
-Neste conteúdo, falaremos mais sobre a análise de dados e como ela deve ser desenvolvida em uma empresa. Para isso, você encontrará os tópicos:
+Chegamos a esse ponto na história do processamento de língua natural surfando na confluência de diversas ondas. Por um lado, temos uma onda que começou lá atrás com o início da área de inteligência artificial na década de 1950 e com os estudos computacionais da linguagem humana; os estudos sobre a linguagem humana, é importante dizer, se iniciaram basicamente junto com a própria filosofia há mais de 2.500 anos. Por outro lado, temos a onda que foi formada pelo aumento da disponibilização de dados em formato digital acarretado pela explosão do uso da internet nos últimos 25 anos. Também precisamos apontar a onda gerada pelo barateamento do hardware que fornece a capacidade computacional necessária para o processamento moderno.
 
-O que é análise de dados?
-Quais são os tipos de análise de dados?
-Quais são os impactos da análise de dados para as empresas?
-Como fazer análise de dados com eficiência?
-Continue a leitura e confira!
+A Inteligência Artificial (IA), que abarca a linguística computacional, também chamada de processamento de língua natural, é uma área que sempre foi carregada de grandes expectativas, mas que espelhando o desenvolvimento da maioria das realizações humanas teve o seu início no ambiente inóspito e carente de recursos (computacionais e de dados), encontrou pontos em que quase foi à extinção, mas conseguiu se apoiar em eventos que ocorreram ao seu redor para florescer e se expandir.
 
-O que é análise de dados?
-A análise de dados é um trabalho dedicado ao aprofundamento sobre os dados que a empresa coleta em suas principais fontes.
+Toda essa riqueza de recursos que encontramos nesse momento com o foco de estudos na área deixe de se centrar na falta de recursos e passe a se centrar nos reais objetivos da área. Temos que encarar as questões sobre se a captura dos fenômenos linguísticos em contexto é realmente o objetivo que deveríamos estar buscando. Devemos agora abordar quais são as consequências reais das ferramentas que empregamos nessa tarefa e os impactos positivos e negativos que elas podem ter na vida das pessoas que começam a interagir corriqueiramente com essa tecnologia.
 
-Emails, plataformas de gestão, ferramentas de automação, planilhas, documentos e uma série de outras origens geram um nível alto de material desestruturado, mas muito útil, o famoso Big Data.
+Precisamos também entender a posição que o processamento de Língua Portuguesa ocupa nesse cenário e quais as melhores direções a serem tomadas para o seu desenvolvimento pleno.
 
-Quando compilada, essa grande quantidade de informação pode ser analisada de maneira técnica, com ajuda da tecnologia.
+Para apresentarmos esse posicionamento, iniciamos com uma breve apresentação do início da pesquisa na área, aquilo que chamei de desenvolvimento em um ambiente inóspito e de baixos recursos na segunda seção. Em seguida, na terceira seção, passamos a descrever inflexão exponencial gerenciada pela área. Com isso nos posicionamos para discutir os desafios a serem enfrentados no futuro próximo e nem tão próximo, quarta seção, para então podermos concluir sobre a nossa visão desse entrocamento de possibilidades em que nos encontramos após uma surpreendente subida e sobre os temores e responsabilidades que contemplamos nessa paisagem em que a pesquisa acadêmica deságua no mundo real.
 
-Hoje, já existem sistemas que dão suporte aos analistas, automatizando a identificação de padrões de comportamento desses dados.
+A consolidação do Processamento de Língua Natural
+Neste trabalho oferecemos uma visão particular sobre os avanços, a princípio lentos, e então desnorteantes, da evolução do processamento de língua natural. Vamos apresentar o desenvolvimento deste processamento como uma sucessão de técnicas que tentam conquistar uma importante noção linguística, que apesar de não ser inicialmente óbvia, vai se consolidando ao longo do tempo: a noção de contexto linguístico.
 
-A análise de dados é o que garante que, a partir de um material bruto, seja possível entender a empresa a partir de diversas perspectivas, sempre com um trabalho técnico e apoiado por tecnologia de ponta
+O processamento computacional da linguagem pode ter diversas aplicações, desde a tradução automática entre linguagens, passando pela identificação de opiniões favoráveis ou desfavoráveis ao objeto do texto (uma atividade conhecida como análise de sentimento) até a mera identificação de qual elemento do texto é referido por um pronome resolução de anáfora pronominal). No entanto, ao descrevermos a evolução das técnicas de processamento, não vamos nos ater a qualquer tarefa em específico, visto que as técnicas parecem evoluir independentemente da tarefa em questão. Tampouco vamos tratar aqui do processamento da fala, que também tem experimentado importantes avanços, mas vamos nos ater ao processamento da linguagem escrita.
 
-A relevância desse trabalho
-O entendimento da importância do processo de análise de dados passa diretamente pela transformação digital. O momento atual coloca empresas em um cenário em que têm a tecnologia como o centro da gestão e da operação.
+Regras
+O grande marco para o desenvolvimento do processamento de língua natural, pelo menos do ponto de vista da ciência da computação, se deu com o enfoque matemático da linguagem proposto pelo trabalho de Chomsky. Esse trabalho identifica um conjunto de linguagens de fácil trato computacional, chamadas de linguagens livres de contexto (Chomsky, 1965). Essas ideias inovadoras na teoria linguística ocorreram ao mesmo tempo que nascia uma área que foi chamada de Inteligência Artificial (Newell; Simon, 1963), e que teve como uma das primeiras iniciativas a ideia de construir tradutor automático do russo para o inglês (Buchanan, 2005); era então o auge da guerra fria.
 
-Nessa realidade, o número de dados gerados aumentou significativamente, o que gera uma possibilidade de leitura ainda maior.
+O fracasso resultante dessa primeira iniciativa de tradução automática evidenciou o alto grau de complexidade dessa tarefa e motivou o desenvolvimento de uma teoria que ficou conhecida como Teoria da Complexidade Computacional (Papadimitriou, 1994).
 
-Analisar dados é um trabalho de rastreamento das atividades e dos resultados que a empresa tem diante do seu público, em ações de Marketing, em vendas, na produtividade interna, nas finanças e em todas as áreas de um negócio.
+As gramáticas livres de contexto serviram de base para o desenvolvimento de linguagens artificiais de programação, impulsionadas pelo sucesso na construção dos primeiros compiladores, tradutores automáticos de linguagens de programação para as linguagens de máquina dos computadores daquela época (Hopcroft; Ullman, 1979). A sistematização do desenvolvimento dos compiladores investigou e explorou as propriedades computacionais das linguagens livres de contexto (Aho et al., 1986).
 
-Tudo isso gera dados que mostram profundamente o que se passa nos setores e nas atividades. Assim, essa análise é uma forma de entender os detalhes de uma empresa.
+As gramáticas livres de contexto se assemelham muito a um conjunto de regras lógicas, e sua implementação em sistemas de computador se parece com o processo de inferência a partir de regras lógicas. Elas têm um aspecto como o seguinte.
 
-A importância da análise de dados para a gestão
-Uma gestão baseada em dados tem maior capacidade de entender cada perspectiva do negócio, ou seja, todas as áreas e seus resultados, o que naturalmente tem impacto na empresa.
+Oração ® Sujeito, Predicado
 
-A análise de dados é o trabalho que permite entender a fundo os resultados de cada setor e, a partir disso, tomar decisões certeiras, baseadas nas informações que foram extraídas desses dados, no processo de data mining.
+Predicado ® Verbo_Intransitivo
 
-Quais são os tipos de análise de dados?
-Há diferentes formas de trabalhar com dados, por isso há análises distintas. Cada tipo é voltado para uma proposta, ou seja, com essas análises é possível enxergar as informações enquadradas em uma intenção mais específica.
+Predicado ® Verbo_Transitivo_Direto, Objeto
 
-Conheça a seguir os tipos de análises mais utilizados e como eles são aplicados na realidade de uma empresa.
+É importante salientar que a formulação gramatical chomskiana não se utiliza de termos como Sujeito ou Objeto como categorias básicas, e esses foram utilizados aqui apenas como exemplos de apelo familiar a um grupo mais amplo de leitores. Note-se a dupla possibilidade de leitura de uma regra. Por exemplo, para gerar um predicado, temos que produzir um verbo intransitivo ou um verbo transitivo direto seguido de um objeto; por outro lado, a partir de um verbo transitivo direto seguido de um objeto, podemos constituir um predicado. Uma sequência de regras lógicas aplicadas na geração de uma sentença nos fornece também a sua estrutura sintática. Outra característica importante está no fato, que muitas vezes passa despercebido, que as categorias que compõem a estrutura sintática não são observáveis diretamente da sentença. Dessa forma, dada uma frase, é necessário um especialista humano para classificar cada expressão na sua correspondente categoria sintática, não havendo nenhum outro método de inspeção direta. O estudo de gramática foi mediado por seres humanos até recentemente, quando surgiram os primeiros trabalhos sobre indução gramatical(Clark; Lappin, 2010).
 
-Descritiva
-A análise descritiva é voltada para as percepções mais dinâmicas do status atual da empresa.
+Um dos problemas em se impor um tratamento baseado em regras lógicas a expressões de língua natural está no fato de que todas as línguas humanas apresentam o fenômeno da ambiguidade. A ambiguidade se apresenta em diversos níveis da linguagem, seja no contexto sonoro, no contexto lexical (palavras ambíguas), no contexto sintático, semântico, seja até mesmo pragmático. E o fato é que a resolução das ambiguidades necessita explorar o contexto linguístico em que as expressões ambíguas ocorrem, se ele existir, ou até o contexto cultural. As regras gramaticais são capazes de captar fenômenos como a ambiguidade sintática associada, bem como a ambiguidade semântica associada a ela. Porém, as regras, se livres de contexto, não são capazes de resolver essa ambiguidade (Carpenter, 1997).
 
-Sua aplicação é a ideal quando gestores precisam ter um acompanhamento constante do negócio, ou seja, quando é preciso saber o que está acontecendo em real time.
+Os enfoques baseados em regras ainda hoje trazem interesse na pesquisa, pois são capazes de apresentar uma abordagem composicional do tratamento da linguagem e, de acordo com essa visão, a semântica de uma sentença está diretamente associada à sua estrutura sintática (Benthem, 1995; Moortgat, 1997). Isso foi reconhecido como uma propriedade importante da análise de linguagem desde o início da Inteligência Artificial (Lambek, 1958), e já na década de 1980, induziu a um tratamento linguístico acoplado às tecnologias de inteligência artificial que foram produzidas naquela época (Pereira; Shieber, 1987). A abordagem composicional busca obter o significado de expressões linguísticas a partir do significado dos seus componentes e da estrutura sintática utilizada na sua composição.
 
-Essa análise pode ser feita a qualquer momento para entender resultados de vendas, conversões, visitas em um site, e muito mais.
+As regras e métodos simbólicos também são úteis para explicar fenômenos linguísticos, mesmo que a automação das explicações seja inviável na prática. Isso explora um aspecto que permanece bastante interessante em relação às abordagens baseadas em regras lógicas, por sua capacidade de capturar relações causais. Voltaremos a falar em causalidade mais para a frente. O importante é notar que, já na década de 1980, ficou claro que a abordagem estritamente lógica era rígida demais para o desenvolvimento de aplicações que possam lidar com as nuances e a complexidades de fenômenos linguísticos.
 
-Preditiva
-Como o nome sugere, esse é o tipo de análise voltado à obtenção de previsões sobre como algo vai se comportar — que pode ser o mercado, o volume de vendas, entre outras questões.
+Probabilidades
+Uma das primeiras propostas de generalização das gramáticas livres de contexto se deu pela atribuição de probabilidades a cada uma das regras gramaticais que poderiam ser aplicadas num determinado ponto (Charniak, 1993). Essa extensão visava resolver ambiguidades sintáticas por meio da escolha de uma dentre as diversas possíveis estrutura da sentença, de forma a priorizar aquela de maior probabilidade. No entanto, esse enfoque ainda assume que as regras gramaticais e suas probabilidades são entidades independentes umas das outras, o que faz que esse formalismo não seja capaz de capturar as interdependências entre as expressões e seu contexto (Manning; Schütze, 1999).
 
-A intenção desse tipo de análise é realizar projeções mais sólidas, com um entendimento maior do que acontecerá no futuro. A partir disso, decisões mais adequadas são tomadas de acordo com as expectativas.
+Pobabilidades, no entanto, possuem uma série de propriedades interessantes, por terem a capacidade de expressar um resumo de toda uma configuração. Os modelos probabilísticos divergem da abordagem composicional, considerando que o significado de uma expressão é dado “pela companhia que ela mantém’’, ou seja, o significado de uma expressão é dado pelos contextos em que ela ocorre (Manning; Schütze, 1999). Nessa visão, o contexto acaba sendo o elemento de atribuição da semântica das expressões linguísticas. Muito se critica essa visão do ponto de vista filosófico, pois ela não fornece os elementos básicos de atribuição de significado e permite uma recorrência infinita no processo de construção de significados. Porém, do ponto de vista computacional, essa visão possui o atrativo de não requerer nenhuma referência externa a não ser as próprias palavras que estão no texto, e boa parte do trabalho realizado em linguística computacional desde os anos 1990 se baseia nessa visão.
 
-Prescritiva
-Análises prescritivas são voltadas para projeção, mas com foco maior em decisões que são tomadas, mais especificamente, na definição de estratégias a serem seguidas.
+Dessa forma, foram surgindo diversos modelos probabilísticos de linguagem, dentre os quais destacamos os modelos baseados em Cadeias de Markov e os modelos baseados em n-gramas (Damerau, 1971). Uma cadeia de Markov é um processo estocástico em que o estado seguinte depende apenas do estado atual, e é independente de todo o histórico anterior dado o estado atual. A restrição de depender apenas de um estado anterior numa sequência discreta pode facilmente ser estendida para um número qualquer predeterminado de estados, conhecido como janela de observação. Dentro dessa janela, um processo markoviano é capaz de detectar as interdependências entre os elementos. Novamente a complexidade computacional cobra um preço, pois o número de relações de probabilidades que devem ser computadas explode exponencialmente como o número de elementos da janela. Assim, os processos markovianos analisam tipicamente janelas muito estreitas, de no máximo cinco elementos. Nenhuma janela de tamanho limitado é capaz de dar conta de diversos fenômenos linguísticos que ocorrem em todas as línguas humanas conhecidas, chamados de dependências de distância ilimitada. Por exemplo, nas expressões comparativas que utilizam o par mais/que, essas duas palavras podem ocorrer a uma distância qualquer e ilimitada:
 
-Uma ação de Marketing, por exemplo, passa por uma análise prescritiva para que haja o entendimento de seu possível sucesso. A prescrição ajuda a entender como desenvolver uma estratégia certeira.
+Ela estudou mais que eu.
 
-Diagnóstica
-Uma análise diagnóstica ajuda a entender de que maneira determinados acontecimentos se desenvolveram. Por exemplo, em quais canais as vendas aconteceram, onde estão concentrados os compradores, entre outros pontos.
+Eu como mais doces que ela.
 
-A proposta dessa análise é destrinchar os dados e concretizar toda a jornada, não só de vendas, mas em todas as interações e acontecimentos do negócio.
+Ele passou mais horas tocando piano que todo o resto da turma junto.
 
-Quais são os impactos da análise de dados para as empresas?
-Todos positivos, os impactos da análise de dados possibilitam uma empresa a entender cada movimento feito, tudo que acontece a partir de suas ações e, principalmente, tomar decisões embasadas.
+Mais vale um asno que me carregue que um cavalo que me derrube.
 
-Quando analisados de forma eficaz e utilizados a partir de uma estratégia, os dados podem resultar em desenvolvimento e capacidade otimizada de administração do negócio.
+Nesse último exemplo há ainda outro “que”, pronome relativo, que aparece em posição intermediária e não faz parte da comparação. Não é à toa que a ambiguidade associada à palavra “que” é um pesadelo para o processamento do português.
 
-A seguir, entenda melhor de que forma a análise ajuda as empresas.
+Um modelo simplificado de linguagem muito usado no contexto probabilístico é o de considerar sentenças como “saco de palavras” (bag of words), ignorando a ordem em que as palavras ocorrem na sentença, reduzindo a sentença a uma contagem de seus componentes. Por exemplo, a última sentença do exemplo anterior é reduzida aos seguintes pares:
 
-Visualização do status atual do mercado
-O mercado é um parâmetro fundamental para que as empresas saibam como elas precisam responder às tendências, aos desejos de consumo e ainda se manterem competitivas.
+asno:1, carregue:1, cavalo:1, derrube:1, mais:1, me:2, que:3, vale:1, um:2.
 
-Há muitos dados que podem ser coletados para entender de que forma outras companhias têm trabalhado e como o público tem respondido às inovações e aos métodos utilizados.
+Nenhuma estrutura sintática foi mantida, inclusive a conjunção e o pronome relativo que foram contabilizados como se fossem a mesma coisa.
 
-Ter essa percepção sobre o status atual do mercado é o que mantém a empresa sempre em posição de tomada de decisão certeira.
+Para aumentar a sensibilidade ao contexto, uma ideia de natureza probabilística que expande esse modelo é o chamado modelo de n-gramas. No caso de n = 1, ele é chamado de modelo de unigramas, cuja aplicação dá origem aos sacos-de-palavras. No caso n = 2, usamos pares de palavras na sequência que ocorrem. Desta forma ficaríamos com os bigramas: mais vale, vale um, um asno etc. Por exemplo, experimentos mostram que a utilização de bigramas para medir as probabilidades na análise de sentimento, ou seja, medir com que frequência uma sequência de duas palavras ocorre numa expressão positiva, negativa, ou neutra, acaba tendo uma eficiência muito boa em domínios limitados.
 
-A antecipação às tendências é também uma possibilidade gerada pela leitura exata do que acontece no segmento, algo que só se concretiza quando há uma visualização correta de como o mercado está.
+Ao aumentar o tamanho da sequência, no entanto, tratando de trigramas, tetragramas etc., temos um outro problema de natureza estatística que é a esparsidade dos elementos. Ou seja, quanto mais longa for a expressão, mais rara ela será. Por exemplo, a probabilidade de ocorrência do trigrama “asno que me” é bastante baixa, isso pode fazer que diversos n-gramas sejam vistos pouquíssimas veze. Existe uma grande chance de que, em um texto nunca visto antes, haja algum n-grama inédito, o que pode levar a probabilidade total do texto seja tratada como nula; isso é contraditório, dado que o texto efetivamente existe. Diversos métodos de suavização de probabilidades foram propostos para lidar com esses casos (Jurafsky; Martin, 2000).
 
-Entendimento das necessidades do cliente
-Em sua jornada de consumo, nas interações que faz por meio dos canais que a empresa disponibiliza, em pesquisas e em atendimentos, o consumidor tende a mostrar suas necessidades.
+Por sua simplicidade, os modelos de n-gramas permanecem até hoje como uma ferramenta para ser usada em casos de poucos dados ou de necessidade de algum resultado com baixo tempo de desenvolvimento. As ideias de janela fixa e de saco-de-palavras são usadas em domínios específicos e até em modelos neurais (Mikolov et al., 2013). Modelos probabilísticos mais sofisticados também foram empregados utilizando redes bayesianas de arquitetura baseada em moldes (templates), para tratar de tarefas sofisticadas como a classificação de tópicos de um conjunto de textos, porém com problemas de eficiência devido ao alto custo computacional (Blei, 2003).
 
-Elas são das mais variadas, desde as que mostram um pouco mais sobre seu perfil de consumo, até aquelas mais detalhadas, como a busca por soluções de questões comuns à sua vida.
+Modelos probabilísticos igualmente sofisticados tiveram grande aplicação na tradução de textos, com a utilização de corpus paralelos, que impulsionaram as pesquisas em tradução automática (Och; Ney, 2002; Koehn, 2009). Com essas técnicas, houve uma rápida melhora na qualidade das traduções, cujas limitações só foram ultrapassadas com o uso de redes neurais.
 
-Todas essas atividades geram dados, esses que precisam ser devidamente captados, sempre respeitando o que diz a LGPD, para então preparar ofertas, ações de Marketing e uma adequação mais ampla ao cliente.
+Redes neurais
+Redes neurais são uma classe de programas que se especializam no reconhecimento de padrões de dados apresentados (dados de treinamento) e que então são utilizados para processar conjuntos de dados desconhecidos (dados de testes). Desde sua concepção, esses sistemas são centrados na captura de elementos contextuais e seu desenvolvimento se deu a partir do aumento da capacidade de processamento e da complexidade dos padrões capazes de serem detectados pelas redes neurais.
 
-As plataformas de CRM são de grande ajuda para gerar registros de cada cliente e, a partir daí, oferecer serviços, produtos e uma relação mais personalizada.
+As redes neurais possuem duas habilidades básicas, como classificadoras de dados e como preditoras de valores (interpoladoras e extrapoladoras) e ambas as capacidades foram exploradas ao longo do seu desenvolvimento. A história das redes neurais começa com um algoritmo chamado de Percéptron (Rosenblatt, 1958), seguida pelo desenvolvimento de métodos para treinar de forma supervisionada, fornecendo exemplos e respostas, mecanismos esses que sempre foram programas de computador baseados em álgebra linear (Novikoff, 1962; Rosenblatt, 1962; Aizerman et al., 1964). Esses Percéptrons foram combinados e organizados em redes multicamadas. Por uma analogia superficial percebida com circuitos de células do sistema nervoso, ficaram conhecidas como as redes neurais artificiais, e depois apenas como redes neurais, com suas diversas camadas conhecidas como camada de entrada, uma ou mais camadas ocultas e uma camada de saída (Figura 1).
