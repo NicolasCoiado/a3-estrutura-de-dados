@@ -1,43 +1,36 @@
 class Doc {
     constructor(txtCompleto){
-        this.txtCompleto = txtCompleto.toLowerCase()
+        this.txtCompleto = txtCompleto.toLowerCase() //Deixando os caracters minúsculos
     }
 
     processarTexto(){
-        const pontVirg = /[,;]/g
-        const pontos = /[.!?][\s\n]+/g;
-        // const artigos =/\b[ao][s]?)\.?\b\s?/gi
+        //Expressões regulares:
+        const pontVirg = /[,;]/g //RegExp para encontrar "," e ";" .
+        const pontos = /[.!?][\s\n]+/g; // RegExp para encontrar os pontos que delimitam frases.
+        const artigos = /\b(?:u[mn][as]?[s]?|[ao][s]?)\.?\b\s?/gi; //RegExp que identifica artigos.
+        // const artigosDef =/\b[ao][s]?)\.?\b\s?/gi
         // const artigosIndef = /\b?:u[mn][as]?[s]?|)\b\s/gi;
-        const artigos = /\b(?:u[mn][as]?[s]?|[ao][s]?)\.?\b\s?/gi;
-
-        //Retirando a acentuação do texto:
-        let txtProcessado = this.txtCompleto.normalize('NFD').replace(/[\u0300-\u036f]/g, "");
         
-        //Retirando as vírgulas e ponto e vígulas do texto:
-        txtProcessado = txtProcessado.replace(pontVirg, "")
+        let txtProcessado = this.txtCompleto.normalize('NFD').replace(/[\u0300-\u036f]/g, "");//Retirando a acentuação do texto.
+        txtProcessado = txtProcessado.replace(pontVirg, "") //Retirando as vírgulas e ponto e vígulas do texto.
+        txtProcessado = txtProcessado.replace(artigos, "") //Retirando os artigos do texto.
         
-        //Retirando os artigos definidos do texto:
-        txtProcessado = txtProcessado.replace(artigos, "")
-        
-        //Retirando os artigos definidos do texto:
-        // txtProcessado = txtProcessado.replace(artigosIndef, "")
+        const frases = txtProcessado.split(pontos)//Dividindo o texto em frases.
 
-        //Dividindo o texto em frases:
-        const frases = txtProcessado.split(pontos)
-
-        for (let i =0; i<frases.length; i++){
-            if(i+1==frases.length)
-                frases[i]=frases[i].replace(".","")
+        for (let i =0; i<frases.length; i++){ //Percorrendo o array frases.
+            if(i+1==frases.length) //Se a frase iterada, for a última frase...
+                frases[i]=frases[i].replace(".","") //Retira o último ponto final.
         }
 
-        let palavras = []
+        let palavras = [] //Criando a matriz que armazenará as palavras.
 
-        for (let frase of frases) {
-            let palavrasFrase = frase.split(" ")
-            palavras = palavras.concat(palavrasFrase)
+        for (let frase of frases) { //Percorrendo as frases.
+            let palavrasFrase = frase.split(" ") //Criando um array com as palavras de cada frase.
+            palavras.push(palavrasFrase); //Incluindo estas palavras no array de palavras, que agora passa a ser uma matriz.
         }
+
+        return {frases, palavras} //Retornando as frases e as palavras.
         
-        console.log(palavras)
     }
 
 }

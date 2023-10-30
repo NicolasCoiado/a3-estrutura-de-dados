@@ -7,9 +7,9 @@ try {
 
     const docx = new Doc(txtCompleto)
     
-    const frases = docx.processarTexto()
+    const conteudo = docx.processarTexto()
 
-    console.log(frases)
+    console.log(conteudo)
 
 } catch (err) {
     console.error(err)
