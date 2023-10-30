@@ -1,21 +1,16 @@
-
  const fs = require('fs')
  const Doc = require('./doc.js')
 
 
 try {
-    const textoCompleto = fs.readFileSync('./test.txt', 'utf-8')
+    const txtCompleto = fs.readFileSync('./test.txt', 'utf-8')
 
-    let docx = new Doc(textoCompleto)
-    console.log(docx)
+    const docx = new Doc(txtCompleto)
     
-    // const frBrutas = textoCompleto.split(".")
-    // const frSemQuebras = frBrutas.map(frase => frase.replace(/\r\n/g, ''))
-    // const frMin = frSemQuebras.map(frase => frase.toLocaleLowerCase())
-    
-    // const artigos = [' a ', ' as ', ' o ', ' os ']
-      
-    // console.log(frMin)
+    const frases = docx.processarTexto()
+
+    console.log(frases)
+
 } catch (err) {
     console.error(err)
 }
