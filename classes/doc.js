@@ -5,20 +5,20 @@ class Doc {
 
     processarTexto(){
         //Expressões regulares:
-        const pontVirg = /[,;]/g //RegExp para encontrar "," e ";" .
+        const pontVirg = /[,;\n]/g //RegExp para encontrar "," e ";" .
         const pontos = /[.!?][\s\n]+/g; // RegExp para encontrar os pontos que delimitam frases.
         const artigos = /\b(?:u[mn][as]?[s]?|[ao][s]?)\.?\b\s?/gi; //RegExp que identifica artigos.
-        const preposicoes = /\b(de|em|a|para|por|com|sem|sob|sobre|entre|até|ante|apos|durante|depois)\b/g; //RgExp que identifica preposições.
-        const conjuncoes = /\b(e|ou|mas|porque|se|quando|embora|como)\b/g; //RegExp que identifica conjunções.
+        const preposicoes = /\b(de|em|a|para|por|com|sem|sob|sobre|entre|até|ante|apos|durante|depois)\b/g; //RgExp que identifica preposições
+        const conjuncoes = /\b(e|ou|mas|porque|se|quando|embora|como)\b/g; //RegExp que identifica conjunções
         // const artigosDef =/\b[ao][s]?)\.?\b\s?/gi
         // const artigosIndef = /\b?:u[mn][as]?[s]?|)\b\s/gi;
         
         let txtProcessado = this.txtCompleto.normalize('NFD').replace(/[\u0300-\u036f]/g, "");//Retirando a acentuação do texto.
         txtProcessado = txtProcessado.replace(pontVirg, "") //Retirando as vírgulas e ponto e vígulas do texto.
         txtProcessado = txtProcessado.replace(artigos, "") //Retirando os artigos do texto.
-        txtProcessado = txtProcessado.replace(preposicoes, "") // Retirando as preposições do texto.
-        txtProcessado = txtProcessado.replace(conjuncoes, "") // Retirando as conjunções do texto.
-
+        // txtProcessado = txtProcessado.replace(preposicoes, "") // Retirando as preposições do texto.
+        // txtProcessado = txtProcessado.replace(conjuncoes, "") // Retirando as conjunções do texto;
+        
         const frases = txtProcessado.split(pontos)//Dividindo o texto em frases.
 
         for (let i =0; i<frases.length; i++){ //Percorrendo o array frases.
@@ -33,7 +33,7 @@ class Doc {
             palavras.push(palavrasFrase); //Incluindo estas palavras no array de palavras, que agora passa a ser uma matriz.
         }
 
-        return palavras //Retornando as palavras.
+        return palavras//Retornando as frases e as palavras.
         
     }
 

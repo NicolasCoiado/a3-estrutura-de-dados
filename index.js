@@ -4,14 +4,30 @@
 
 try {
     const txtCompleto = fs.readFileSync('./textos/test.txt', 'utf-8')
-
-    const documento = new Doc(txtCompleto)
-    const grafo = new Grafo()
+    const documento = new Doc(txtCompleto) 
+    const frases = documento.processarTexto() // [['a', 'b'],['a','c']]
     
-    const conteudo = documento.processarTexto()
-    
-    grafo.criarGrafo(conteudo)
+    let contadorVertices = 0
 
+    for (let frase of frases){
+        contadorVertices += frase.length
+    }
+
+    const topicos = new Grafo(contadorVertices)
+    for (let frase of frases){
+        frase.map(criarGrafo)
+    }
+    
+
+    function criarGrafo(palavra, indice, palavras){
+        let vertice1 = topicos.addVertice(palavra)
+        if(palavras[indice+1]!=undefined){
+            let vertice2 = topicos.addVertice(palavras[indice+1])
+            topicos.addAresta(vertice1, vertice2)
+        }
+    }
+
+    topicos.mostrarGrafo();
 } catch (err) {
     console.error(err)
 }
