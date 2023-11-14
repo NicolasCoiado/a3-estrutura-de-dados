@@ -51,26 +51,43 @@ class Grafo {
         const listaAdj = this.listaAdj
         
         let mediaGraus = calcMediaGraus(listaAdj)
+        let mediaPeso = calcMediaPeso(listaAdj)
 
         const maioresVertices = encontrarGraus(mediaGraus, listaAdj)
         
-        let arestasPesadas
+        const arestasPesadas  = encontrarPesos(mediaPeso, listaAdj)
 
-        let pesoTotal=0
-        let totalArestas=0
-        let mediaPesoArestas=0
+        const topicos = comparacao(maioresVertices, arestasPesadas)
 
-        for(let vertice of listaAdj.keys()){
-            let arestas = listaAdj.get(vertice)
-            totalArestas+=arestas.length
-            for (let aresta of arestas){
-                pesoTotal += aresta.peso
+        console.log(topicos)
+        
+        function encontrarPesos(mediaPeso, listaAdj){
+            const arestasPesadas = []
+            for(let vertice of listaAdj.keys()){
+                let arestas = listaAdj.get(vertice)
+                
+                for (let aresta of arestas){
+                    if(aresta.peso>mediaPeso){
+                        arestasPesadas.push({vertice1: vertice, vertice2:aresta.verticeDestino})
+                    }
+                }
             }
+            return arestasPesadas
         }
-        mediaPesoArestas = pesoTotal/totalArestas
-        console.log(mediaPesoArestas)
 
+        function calcMediaPeso (listaAdj) {
+            let pesoTotal=0
+            let totalArestas=0
 
+            for(let vertice of listaAdj.keys()){
+                let arestas = listaAdj.get(vertice)
+                totalArestas+=arestas.length
+                for (let aresta of arestas){
+                    pesoTotal += aresta.peso
+                }
+            }
+            return pesoTotal/totalArestas
+        }
         
         function encontrarGraus (mediaGraus, listaAdj){
             const maioresVertices = []
@@ -83,8 +100,6 @@ class Grafo {
             return maioresVertices
         }
 
-        
-        
         function calcMediaGraus  (listaAdj) {
             let somasGraus = 0
             let qtdVertices = listaAdj.size
@@ -97,6 +112,20 @@ class Grafo {
             
             return somasGraus/qtdVertices
             
+        }
+
+        function comparacao  (maioresVertices, arestasPesadas) {
+            const topicos = []
+            for(const vertice of maioresVertices){
+                for(const aresta of arestasPesadas){
+                    if(vertice === aresta.vertice1 || vertice === aresta.vertice2){
+                        if(!topicos.includes(vertice)){
+                            topicos.push(vertice)
+                        }
+                    }
+                }
+            }
+            return topicos
         }
     }
 

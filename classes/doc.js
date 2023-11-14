@@ -10,8 +10,7 @@ class Doc {
         const artigos = /\b(?:u[mn][as]?[s]?|[ao][s]?)\.?\b\s?/gi; //RegExp que identifica artigos.
         const preposicoes = /\b(de|em|a|para|por|com|sem|sob|sobre|entre|até|ante|apos|durante|depois)\b/g; //RgExp que identifica preposições
         const conjuncoes = /\b(e|ou|mas|porque|se|quando|embora|como)\b/g; //RegExp que identifica conjunções
-        // const artigosDef =/\b[ao][s]?)\.?\b\s?/gi
-        // const artigosIndef = /\b?:u[mn][as]?[s]?|)\b\s/gi;
+
         
         let txtProcessado = this.txtCompleto.normalize('NFD').replace(/[\u0300-\u036f]/g, "");//Retirando a acentuação do texto.
         txtProcessado = txtProcessado.replace(pontVirg, "") //Retirando as vírgulas e ponto e vígulas do texto.

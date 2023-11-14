@@ -3,7 +3,7 @@
  const Grafo = require('./classes/grafo.js')
 
 try {
-    const txtCompleto = fs.readFileSync('./textos/arq_1.txt', 'utf-8')
+    const txtCompleto = fs.readFileSync('./textos/arq_2.txt', 'utf-8')
     const documento = new Doc(txtCompleto) 
     const frases = documento.processarTexto()
     construirGrafo(frases)
