@@ -1,6 +1,7 @@
  const fs = require('fs')
  const Doc = require('./classes/doc.js')
  const Grafo = require('./classes/grafo.js')
+//  const stopwords = require('./stopwords.json') 
 
 try {
     const txtCompleto = fs.readFileSync('./textos/arq_2.txt', 'utf-8')
