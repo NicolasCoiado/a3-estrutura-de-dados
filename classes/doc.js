@@ -6,15 +6,17 @@ class Doc {
     }
 
     processarTexto(){
-        const pontVirg = /[,;\n]/g
+        const pontVirg = /[,;\[\]\{\}\(\)\-\n]/g
         const pontos = /[.!?][\s\n]+/g
-    
+        const numeros = /[0-9]+/g
         const formattedStopwords = new RegExp('\\b(' + stopwords.palavras.join('|') + ')' +'\\b', 'g');
 
         let txtProcessado = this.txtCompleto.normalize('NFD').replace(/[\u0300-\u036f]/g, '')
         txtProcessado = txtProcessado.replace(pontVirg, '') 
-        txtProcessado = txtProcessado.replace(formattedStopwords, ' ') // Substituir stopwords por um espaço
+        txtProcessado = txtProcessado.replace(formattedStopwords, ' ')
+        txtProcessado = txtProcessado.replace(numeros, '')
        
+        
         const frases = txtProcessado.split(pontos)
 
         for (let i = 0; i < frases.length; i++){
@@ -25,11 +27,9 @@ class Doc {
         let palavras = []
 
         for (let frase of frases) {
-            let palavrasFrase = frase.split(' ').filter(palavra => palavra !== '') // Remover strings vazias
-            console.log(palavrasFrase)
+            let palavrasFrase = frase.split(' ').filter(palavra => palavra !== '')
             palavras.push(palavrasFrase)
         }
-
         return palavras
     }
 }
