@@ -16,7 +16,6 @@ class Doc {
         txtProcessado = txtProcessado.replace(formattedStopwords, ' ')
         txtProcessado = txtProcessado.replace(numeros, '')
        
-        
         const frases = txtProcessado.split(pontos)
 
         for (let i = 0; i < frases.length; i++){

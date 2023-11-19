@@ -58,8 +58,8 @@ class Grafo {
         const arestasPesadas  = encontrarPesos(mediaPeso, listaAdj)
 
         const topicos = comparacao(maioresVertices, arestasPesadas)
-
-        console.log(topicos)
+        
+        return topicos
         
         function encontrarPesos(mediaPeso, listaAdj){
             const arestasPesadas = []

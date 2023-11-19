@@ -6,7 +6,9 @@ try {
     const txtCompleto = fs.readFileSync('./textos/arq_4.txt', 'utf-8')
     const documento = new Doc(txtCompleto) 
     const frases = documento.processarTexto()
-    construirGrafo(frases)
+    const grafo1 = construirGrafo(frases)
+
+    console.log(grafo1.encontrarTopicos())
 
     function construirGrafo (){
         let contadorVertices = 0
@@ -15,22 +17,19 @@ try {
             contadorVertices += frase.length
         }
 
-        const topicos = new Grafo(contadorVertices)
+        const grafo = new Grafo(contadorVertices)
         for (let frase of frases){
-            frase.map(criarGrafo)
+            frase.map(popularGrafo)
         }
         
-
-        function criarGrafo(palavra, indice, palavras){
-            let vertice1 = topicos.addVertice(palavra)
+        function popularGrafo(palavra, indice, palavras){
+            let vertice1 = grafo.addVertice(palavra)
             if(palavras[indice+1]!=undefined){
-                let vertice2 = topicos.addVertice(palavras[indice+1])
-                topicos.addAresta(vertice1, vertice2)
+                let vertice2 = grafo.addVertice(palavras[indice+1])
+                grafo.addAresta(vertice1, vertice2)
             }
         }
-
-        // topicos.encontrarTopicos()
-        topicos.mostrarGrafo()
+        return grafo
     }
     
 } catch (err) {
