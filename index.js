@@ -17,17 +17,24 @@ try {
     const topicosD2 = grafo2.encontrarTopicos()
     const referenciasD2 = documentoD2.encontrarRefs()
 
+    const txtCompletoD3 = fs.readFileSync('./textos/arq_3.txt', 'utf-8')
+    const documentoD3 = new Doc(txtCompletoD3) 
+    const frasesD3 = documentoD3.processarTexto()
+    const grafo3 = grafoDoc(frasesD3)
+    const referenciasD3 = documentoD3.encontrarRefs()
+
     const refGerais = []
     refGerais.push(referenciasD1)
     refGerais.push(referenciasD2)
-
+    refGerais.push(referenciasD3)
+  
     const grafoRef = grafoRefe(refGerais)
-    
-    console.log(grafoRef)
 
+    grafoRef.mostrarGrafo()
+    const topicosD3 = grafoRef.encontrarTopicos()
+    console.log(topicosD3)
     function grafoRefe (allRef){
         let contadorVertices=0
-        const grafoAut = new Grafo(contadorVertices)
 
         for(const referencia of allRef){
             contadorVertices++
@@ -37,6 +44,8 @@ try {
                 contadorVertices++
             }
         }
+
+        const grafoAut = new Grafo(contadorVertices)
 
         for(const referencia of allRef){
             const autor = referencia.autor
@@ -48,7 +57,7 @@ try {
                 grafoAut.addAresta(vertice1, vertice2)
             }
         }
-
+        return grafoAut
     }
 
     function grafoDoc (frases){
