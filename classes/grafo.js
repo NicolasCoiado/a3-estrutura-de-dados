@@ -8,7 +8,6 @@ class Grafo {
     addVertice(vertice){ //Método para adição de vértices ao grafo.
         const chavesVertice = this.listaAdj.keys() //Variável que armazenará as chaves do mapa.
         let verticeRepetido //Variável que armazenará a possibilidade do vértice já existir.
-
         for (let verticeMapa of chavesVertice){ //Percorrendo chaves de vértices.
             if(vertice===verticeMapa) //Se o vértice que desejamos criar, já existir...
                 verticeRepetido=true //A variável "Vertice repetido" recebe "true".
@@ -29,7 +28,6 @@ class Grafo {
 
         for (let vertice of chavesVertice){ //Percorrendo chaves de vértices.
             let arestas = this.listaAdj.get(vertice) //Armazenando as arestas de um vértice.
-
             for (let aresta of arestas){//Percorrendo as arestas do vértice.
                 if(vertice===vertice1 && aresta.verticeDestino===vertice2){ //Caso a aresta exista...
                     arestaExistente=true //A variável "arestaExistente" recebe "true".
@@ -45,6 +43,8 @@ class Grafo {
             this.listaAdj.get(vertice1).push({verticeDestino: vertice2, peso: 1}) //Adiconando a adjacência no primeiro vértice.
             this.listaAdj.get(vertice2).push({verticeDestino: vertice1, peso: 1}) //Adiconando a adjacência no segundo vértice.
         }
+
+        
     }
 
     encontrarTopicos(){
