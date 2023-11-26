@@ -4,43 +4,28 @@ class Doc {
     constructor(txtCompleto){
         this.txtCompleto = txtCompleto
     }
-    encontrarRefs(){
+    encontrarAutores(){
         const txtCompleto = this.txtCompleto
         const quebra = /\r\n/g
         const partes = txtCompleto.split(quebra)
-        const localRef = partes.indexOf("Referências bibliográficas:")
-        const localAutor = partes.length
-        const listaRef = []
+        const txtAutores = partes[partes.length-1].toUpperCase()
+        const autores = txtAutores.split(",")
 
-        let autor = partes[localAutor-1]
-        autor = autor.substr(7, autor.length-1)
-
-        let referencias = []
-        for(let i=0; i<partes.length; i++){
-            if(i>localRef && i!=partes.length-1){
-                referencias.push(partes[i])
-            }
-        }
-        
-        for(let referencia of referencias){
-            const ref = referencia.split('.', 2)
-            const autorRef = ref[0]
-            listaRef.push(autorRef)
-        }
-        return {listaRef, autor}
+        return autores
     }
     processarTexto(){
         const txtCompleto = this.txtCompleto
         const quebra = /\r\n/g
         const partes = txtCompleto.split(quebra)
-        const localRef = partes.indexOf("Referências bibliográficas:")
-        let texto = ''
-        for(let i=0; i<partes.length; i++){
-            if(i<localRef){
-                texto+=`\n${partes[i]}`
-            }
+        partes.pop()
+        let txtResumo = ''
+        for(const paragrafo of partes){
+            if (txtResumo === '')
+                txtResumo+=paragrafo
+            else
+                txtResumo+=`\n${paragrafo}`
         }
-        const txtMinusculo = texto.toLowerCase()
+        const txtMinusculo = txtResumo.toLowerCase()
         const pontVirg = /[,;\[\]\{\}\(\)\-\n]/g
         const pontos = /[.!?][\s\n]+/g
         const numeros = /[0-9]+/g
