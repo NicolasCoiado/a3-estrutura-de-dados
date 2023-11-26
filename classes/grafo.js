@@ -43,8 +43,6 @@ class Grafo {
             this.listaAdj.get(vertice1).push({verticeDestino: vertice2, peso: 1}) //Adiconando a adjacência no primeiro vértice.
             this.listaAdj.get(vertice2).push({verticeDestino: vertice1, peso: 1}) //Adiconando a adjacência no segundo vértice.
         }
-
-        
     }
 
     encontrarTopicos(){
