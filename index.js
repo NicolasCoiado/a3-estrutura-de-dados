@@ -1,35 +1,77 @@
  const fs = require('fs')
  const Doc = require('./classes/doc.js')
  const Grafo = require('./classes/grafo.js')
+ const GrafoSimilaridade = require('./classes/grafoSimilaridade.js')
 
 try {
-    const txtCompletoD1 = fs.readFileSync('./textos/artigo_1.txt', 'utf-8')
-    const documentoD1 = new Doc(txtCompletoD1) 
-    const frasesD1 = documentoD1.processarTexto()
-    const grafo1 = grafoDoc(frasesD1)
-    const topicosD1 = grafo1.encontrarTopicos()
-    const coatoresD1 = documentoD1.encontrarAutores()
+    const totalArtigos = 60
+    const topicos = [] //Topicos dos artigos
+    const autores = []
     
-    const txtCompletoD2 = fs.readFileSync('./textos/artigo_2.txt', 'utf-8')
-    const documentoD2 = new Doc(txtCompletoD2) 
-    const frasesD2 = documentoD2.processarTexto()
-    const grafo2 = grafoDoc(frasesD2)
-    const topicosD2 = grafo2.encontrarTopicos()
-    const coatoresD2 = documentoD2.encontrarAutores()
+    for(let i = 1 ; i<=totalArtigos; i++){
+        let artigo = lerArtigo(i)
+        autores.push(artigo.coatores)
+        topicos.push(artigo.topicos)
+    }
 
-    const txtCompletoD3 = fs.readFileSync('./textos/artigo_2.txt', 'utf-8')
-    const documentoD3 = new Doc(txtCompletoD3) 
-    const frasesD3 = documentoD3.processarTexto()
-    const grafo3 = grafoDoc(frasesD3)
-    const topicosD3 = grafo3.encontrarTopicos()
-    const coatoresD3 = documentoD3.encontrarAutores()
+    const grafoAuto = grafoAut(autores)
+    const autInfluentes = grafoAuto.autInfluencia() //Autores mais influentes
+    const grafoSimilaridades = grafoSim(topicos, totalArtigos) //Grafo de similaridades
 
-    const autoresGerais = [coatoresD1, coatoresD2, coatoresD3]
+    function lerArtigo(nArtigo){
+        const txtCompleto = fs.readFileSync(`./textos/artigo_${nArtigo}.txt`, 'utf-8')
+        const documento = new Doc(txtCompleto) 
+        const frases = documento.processarTexto()
+        const grafo = grafoDoc(frases)
+        const topicos = grafo.encontrarTopicos()
+        const coatores = documento.encontrarAutores()
+        
+        return {topicos, coatores}
+    }
 
-    const grafoCoatoria = grafoAut(autoresGerais)
+    function medirSimilaridade(topicos, art1, art2){
+        const qtdtArt1 = topicos[art1].length
+        const qtdtArt2 = topicos[art2].length
+        let iguais1 = 0
+        let iguais2 = 0
+        for (let tArt1 of topicos[art1]){
+            for(let tArt2 of topicos[art2]){
+                if(tArt1 === tArt2){
+                    iguais1++
+                }
+            }
+        }
+        for (let tArt2 of topicos[art2]){
+            for(let tArt1 of topicos[art1]){
+                if(tArt2 === tArt1){
+                    iguais2++
+                }
+            }
+        }
+        const similaridade12 = (100*iguais1)/qtdtArt1
+        const similaridade21 = (100*iguais2)/qtdtArt2
 
-    const principaisAutores = grafoCoatoria.encontrarTopicos()
-    console.log(principaisAutores)
+        const mediaSimilaridade = (similaridade12 + similaridade21) / 2
+
+        return mediaSimilaridade
+    }
+    function grafoSim(topicos, totalArtigos){
+        const grafo = new GrafoSimilaridade(totalArtigos)
+        for(let i = 1 ; i < totalArtigos; i++){ 
+            for (let i2 = 1 ; i2 < totalArtigos; i2++){
+                if(i!=i2){
+                    const similaridadeGrafos = medirSimilaridade(topicos, i, i2)
+                    if(similaridadeGrafos>0){
+                        let vertice1 = grafo.addVertice(topicos[i])
+                        let vertice2 = grafo.addVertice(topicos[i2])
+                        grafo.addAresta(vertice1, vertice2, similaridadeGrafos)
+                    }
+                }
+    
+            }
+        }
+        return grafo
+    }
 
     function grafoAut (autoresGerais){
         let contadorVertices = 0
@@ -38,12 +80,12 @@ try {
         }
 
         const grafo = new Grafo(contadorVertices)
-
+        
         for (let autoresArtigo of autoresGerais){
             autoresArtigo.map(popularGrafo)
         }
-
         return grafo
+
         function popularGrafo(autor, indice, autoresArtigo){
             let vertice1 = grafo.addVertice(autor)
             if(autoresArtigo[indice+1]!=undefined){

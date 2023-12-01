@@ -127,6 +127,36 @@ class Grafo {
         }
     }
 
+    autInfluencia(){
+        const listaAdj = this.listaAdj
+        
+        let mediaGraus = calcMediaGraus(listaAdj)
+        const maioresVertices = encontrarGraus(mediaGraus, listaAdj)
+
+        function encontrarGraus (mediaGraus, listaAdj){
+            const maioresVertices = []
+            for(let vertice of listaAdj.keys()){
+                let arestas = listaAdj.get(vertice)
+                if(arestas.length>mediaGraus){
+                    maioresVertices.push(vertice)
+                }
+            }
+            return maioresVertices
+        }
+
+        function calcMediaGraus  (listaAdj) {
+            let somasGraus = 0
+            let qtdVertices = listaAdj.size
+            const chavesVertice = listaAdj.keys()
+
+            for (let vertice of chavesVertice){
+                let arestas = listaAdj.get(vertice)
+                somasGraus += arestas.length
+            }        
+            return somasGraus/qtdVertices 
+        }
+        return maioresVertices
+    }
 
     mostrarGrafo(){
     const chavesVertice = this.listaAdj.keys()

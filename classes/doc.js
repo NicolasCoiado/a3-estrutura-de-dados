@@ -10,7 +10,6 @@ class Doc {
         const partes = txtCompleto.split(quebra)
         const txtAutores = partes[partes.length-1].toUpperCase()
         const autores = txtAutores.split(",")
-
         return autores
     }
     processarTexto(){
