@@ -1,11 +1,12 @@
- const fs = require('fs')
- const Doc = require('./classes/doc.js')
- const Grafo = require('./classes/grafo.js')
- const GrafoSimilaridade = require('./classes/grafoSimilaridade.js')
+const fs = require('fs')
+const Doc = require('./classes/doc.js')
+const Grafo = require('./classes/grafo.js')
+const GrafoSimilaridade = require('./classes/grafoSimilaridade.js')
+const interface = require('./classes/interface.js')
 
 try {
     const totalArtigos = 60
-    const topicos = [] //Topicos dos artigos
+    const topicos = []
     const autores = []
     
     for(let i = 1 ; i<=totalArtigos; i++){
@@ -15,8 +16,10 @@ try {
     }
 
     const grafoAuto = grafoAut(autores)
-    const autInfluentes = grafoAuto.autInfluencia() //Autores mais influentes
-    const grafoSimilaridades = grafoSim(topicos, totalArtigos) //Grafo de similaridades
+    const autInfluentes = grafoAuto.autInfluencia() 
+    const grafoSimilaridades = grafoSim(topicos, totalArtigos) 
+
+    interface(topicos, autores, autInfluentes, grafoSimilaridades)
 
     function lerArtigo(nArtigo){
         const txtCompleto = fs.readFileSync(`./textos/artigo_${nArtigo}.txt`, 'utf-8')

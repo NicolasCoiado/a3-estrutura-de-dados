@@ -47,13 +47,13 @@ class Grafo {
         const chavesVertice = this.listaAdj.keys()
             for (let vertice of chavesVertice){
                 let arestas = this.listaAdj.get(vertice)
-                console.log("================================")
-                for (let aresta of arestas){
-                    console.log("-----------------------------------------")
-                    console.log("1° vértice: "+vertice)
-                    console.log("2° vértice: "+aresta.verticeDestino)
+                console.log("Vértice: "+vertice)
+                for (let aresta of arestas){                    
+                    console.log("Aresta com: "+aresta.verticeDestino)
                     console.log("Peso da aresta: "+aresta.peso)
+                    console.log("------------------------------")
                 }
+                console.log(" ")
             }
         }
 }
