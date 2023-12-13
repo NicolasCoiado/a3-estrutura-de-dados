@@ -9,7 +9,7 @@ Este projeto trata-se de um software capaz de ler resumos de artigos ciêntífic
 * A similaridade entre dois resumos.
 
 ### Objetivo
-Este projeto foi desenvolvido como uma atividade avaliativa para a matéria de **Estrutura de Dados e Algoritmos**, do curso de **Ciência da Computação**. Seu objetivo é a implementação de grafos e a avaliação da performace apresentada pelas soluções desenvolvidas.
+Este projeto foi desenvolvido como uma atividade avaliativa para a matéria de **Estrutura de Dados e Algoritmos**, do curso de **Ciência da Computação**. Seu objetivo é a implementação de grafos e a avaliação da performance apresentada pelas soluções desenvolvidas.
 
 ### Notações Big O
 Não seria possível identificar a eficiência do software por inteiro, por isso, dividi o programa em 3 funções, sendo elas: **Identificação dos tópicos** de cada artigo, **Identificação dos autores** mais influentes e a **Medição de similaridade** entre resumos.
@@ -22,7 +22,7 @@ Para a identificação dos tópicos de cada resumo, o texto passa por diversas e
 * Construção do grafo (Que será abordada melhor no decorrer da leitura);
 * E a comparação entre vértices.
 
-Na etapa de comparação entre vértices, a condição usada para determinar que uma palavra é um tópico importante para o resumo é a seguinte:
+Na etapa de comparação entre vértices, a condição usada para determinar o que é tópico importante para o resumo é a seguinte:
 
 `A palavra deve ter um grau maior que o grau médio das outras palavras; E a palavra deve ter ao menos uma aresta mais pesada em comparação com o peso médio das arestas em geral`.
 
